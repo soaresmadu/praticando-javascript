@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>GERADOR DE SENHAS</h1>
+
+        <div class="menu">
+            <label for="caracteres">Defina o número de caracteres desejado:</label>
+            <input type="range" name="caracteres" id="caracteres" min="8" max="16">
+            <div id="valorSelecionado"></div>
+
+            <div class="opcoes">
+                <label>
+                <input type="radio" name="typeOf" id="onlyLetter" value="onlyLetter">Somente letras
+                </label>
+
+                <label>
+                <input type="radio" name="typeOf" id="alsoNumbers" value="alsoNumbers">Letras e números
+                </label>
+
+                <label>
+                <input type="radio" name="typeOf" id="alsoSymbols" value="alsoSymbols">Letras, números e símbolos
+                </label>
+            </div>
+
+            <div class="warning" id="warning"></div>
+        
+        </div>
+
+        <div class="password">
+            <input type="text" id="password" readonly>
+        </div>
+
+        <button id="passwordBtn">GERAR SENHA</button>
+    </div>
+
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Calculadora</title>
+
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./iphones.css">
+  
+	</head>
+
+  <body>
+
+    <container class="calculadora">
+      <input id="resultado" type="text" class="display">
+
+      <div class="row1">
+      <button onclick="limparDisplay()" class="first-button">C</button>
+      <button onclick="mudarSinal()" class="first-button">+/-</button>
+      <button class="first-button">%</button>
+      <button onclick="mostrarValor('/')" class="right-button">÷</button>
+      </div>
+
+      <div class="row2">
+        <button onclick="mostrarValor('7')" class="normal-button">7</button>
+        <button onclick="mostrarValor('8')" class="normal-button">8</button>
+        <button onclick="mostrarValor('9')" class="normal-button">9</button>
+        <button onclick="mostrarValor('*')" class="right-button">x</button>
+      </div>
+
+      <div class="row3">
+        <button onclick="mostrarValor('4')" class="normal-button">4</button>
+        <button onclick="mostrarValor('5')" class="normal-button">5</button>
+        <button onclick="mostrarValor('6')" class="normal-button">6</button>
+        <button onclick="mostrarValor('-')" class="right-button">-</button>
+      </div>
+
+      <div class="row4">
+        <button onclick="mostrarValor('1')" class="normal-button">1</button>
+        <button onclick="mostrarValor('2')" class="normal-button">2</button>
+        <button onclick="mostrarValor('3')" class="normal-button">3</button>
+        <button onclick="mostrarValor('+')" class="right-button">+</button>
+      </div>
+
+      <div class="row5">
+        <button onclick="mostrarValor('0')" class="zero-button">0</button>
+        <button onclick="mostrarValor('.')" class="normal-button">,</button>
+        <button onclick="calcular()" class="right-button">=</button>
+      </div>
+
+    </container>
+   
+    
+    <script src="./index.js"></script>
+  </body>	
+
+</html>

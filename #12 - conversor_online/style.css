@@ -1,0 +1,104 @@
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald";
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 3px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.conversor{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.temperatura, .comprimento{
+    background-color: rgb(150, 213, 255);
+    border-radius: 2px;
+    padding: 20px;
+    width: 240px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.temperatura h2, .comprimento h2{
+    font-size: 20px;
+    align-self: center;
+}
+
+.temperatura input, .comprimento input{
+    width: 200px;
+    height: 35px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 2px;
+    align-self: center;
+    margin-bottom: 10px;
+}
+
+.temperatura label, .comprimento label{
+    font-size: 20px;
+    padding-left: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#deTemperatura, #paraTemperatura, #deComprimento, #paraComprimento{
+    font-size: 15px;
+    width: 130px;
+    border: none;
+    border-radius: 2px;
+}
+
+.temperatura button, .comprimento button{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 10px;
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    background-color: rgb(100, 144, 173);
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.temperatura button:hover, .comprimento button:hover{
+    background-color: rgb(53, 78, 94);
+}
+
+.resultadoTemp, .resultadoComp{
+    text-align: center;
+    font-size: 18px;
+}

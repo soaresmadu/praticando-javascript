@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet"> 
+    <title>Jogo da Velha</title>
+</head>
+
+<body>
+
+    <h1>JOGO DA VELHA</h1>
+    
+    <div class="jogo-da-velha" id="jogo-da-velha">
+        <div class="linha">
+            <div class="space"></div>
+            <div class="space"></div>
+            <div class="space"></div>
+        </div>
+
+        <div class="linha">
+            <div class="space"></div>
+            <div class="space"></div>
+            <div class="space"></div>
+        </div>
+
+        <div class="linha">
+            <div class="space"></div>
+            <div class="space"></div>
+            <div class="space"></div>
+        </div>
+    </div>
+
+    <div class="instrucoes" id="instrucoes"></div>
+    <div class="menu">
+        <button id="jogarBtn">JOGAR</button>
+        <button id="comoJogarBtn">COMO JOGAR</button>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="conteudo">
+        <h3>COMO JOGAR:</h3>
+        <p>
+        Os jogadores se alternam, um coloca "X" e o outro "O", em um dos espaços vazios da grade. O primeiro jogador a alinhar 3 de seus símbolos em uma linha (horizontal, vertical ou diagonal) ganha.
+        <h3>Final do jogo:</h3>
+        <p>O jogo termina quando alguém ganha ou quando todos os espaços estiverem preenchidos, resultando em empate.</p>
+        <button id="closePopup">Fechar</button>
+        </div>
+    </div>
+
+<script src="./script.js"></script>
+</body>
+
+</html>

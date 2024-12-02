@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue";
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 600px;
+    height: 400px;
+    background-color: #296269;
+    border-radius: 3px;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.layout-jogo{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 270px;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#iniciarBtn {
+    width: 180px;
+    height: 40px;
+    background-color: #296269;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    font-size: 22px;
+    letter-spacing: 0.6px;
+    font-weight: 100;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#iniciarBtn:hover {
+    background-color: #0c2225;
+}
+
+.jogo {
+    display: none;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.layout-jogo h1{
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+#dicas{
+    width: 350px;
+    height: 35px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 0.7px;
+    border: none;
+    background-color: #ccc;
+    border-radius: 2px;
+    outline: none;
+}
+
+#dicas::placeholder{
+    color: #000;
+}
+
+#palpiteInput{
+    width: 170px;
+    height: 30px;
+    text-align: center;
+
+    font-size: 16px;
+}
+
+.layout-jogo button{
+    width: 120px;
+    height: 30px;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    background-color: #296269;
+    color: #fff;
+    cursor: pointer;
+}
+
+.layout-jogo button:hover{
+    background-color: #0c2225;
+}
+
+.layout-jogo span{
+    font-size: 19px;
+}
+
+.menu{
+    display: flex;
+}
+
+#comoJogarBtn{
+    width: 130px;
+    height: 40px;
+    background-color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 19px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#comoJogarBtn:hover{
+    background-color: #ccc;
+}
+
+.popUpVenceu{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.popUpVenceu h1{
+    font-size: 20px;
+}
+#mensagemFinal1{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.popUpVenceu button{
+    background-color: #0c2225;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.popUpPerdeu{
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background-color: #ccc;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.popUpPerdeu h1{
+    font-size: 20px;
+}
+#mensagemFinal2{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.popUpPerdeu button{
+    background-color: #0c2225;
+    width: 100px;
+    height: 30px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.comoJogar{
+    position: absolute;
+    width: 550px;
+    height: 350px;
+    background-color: rgba(255,255,255, 1);
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 35px;
+}
+.comoJogar h1{
+    font-size: 25px;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+.comoJogar h2{
+    font-size: 22px;
+    margin-bottom: 4px;
+    font-weight: 500;
+}
+.comoJogar p{
+    font-size: 17px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 100;
+}
+.comoJogar button{
+    background-color: #0c2225;
+    color: #fff;
+    cursor: pointer;
+    width: 150px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    letter-spacing: 1.4px;
+}

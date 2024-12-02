@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu Condensed";
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 630px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 50px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1{
+    font-size: 31px;
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+
+
+#caracteres{
+    width: 200px;
+    margin-top: 10px;
+}
+
+#valorSelecionado{
+    padding-top: 10px;
+}
+
+.opcoes{
+    display: flex;
+    padding-top: 30px;
+}
+
+.opcoes label{
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 17px;
+    padding-bottom: 20px;
+    font-weight: 300;
+}
+
+.opcoes input{
+    margin-right: 3px;
+    padding-bottom: 20px;
+}
+
+.password input {
+    width: 300px;
+    height: 38px;
+    border: none;
+    background-color: #ccc;
+    border-radius: 3px;
+    outline: none;
+    margin-bottom: 30px;
+    padding-left: 15px;
+    font-size: 18px;
+}
+
+button{
+    width: 180px;
+    height: 32px;
+    background-color: blue;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: rgb(2, 2, 92);
+}
+
+.warning{
+    font-weight: bold;
+    color: red;
+    font-weight: 500;
+    font-size: 19px;
+}

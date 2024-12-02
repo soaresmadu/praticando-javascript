@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <title>Conversor Online</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>CONVERSOR ONLINE</h1>
+
+        <div class="conversor">
+            <div class="temperatura">
+                <h2>TEMPERATURA</h2>
+                <input type="number" id="valueTemp" placeholder="Digite um valor" id="valueTemp">
+
+                <label for="deTemperatura">DE:
+                    <select name="deTemperatura" id="deTemperatura">
+                        <option value="" disabled selected></option>
+                        <option value="c">CELSIUS</option>
+                        <option value="f">FAHRENHEIT</option>
+                    </select>
+                </label>
+
+                <label for="paraTemperatura">PARA:
+                    <select name="paraTemperatura" id="paraTemperatura">
+                        <option value="" disabled selected></option>
+                        <option value="c">CELSIUS</option>
+                        <option value="f">FAHRENHEIT</option>
+                    </select>
+                </label>
+
+                <button class="temperaturaBtn" id="temperaturaBtn">CONVERTER</button>
+
+                <div class="resultadoTemp" id="resultadoTemp"></div>
+            </div>
+
+            <div class="comprimento">
+                <h2>COMPRIMENTO</h2>
+                <input type="number" id="valueComp" placeholder="Digite um valor" id="valueComp" min="1">
+
+                <label for="deComprimento">DE:
+                    <select name="deComprimento" id="deComprimento">
+                        <option value="" disabled selected></option>
+                        <option value="km">Quilômetro (km)</option>
+                        <option value="m">Metro (m)</option>
+                        <option value="dm">Decímetro (dm)</option>
+                        <option value="cm">Centímetro (cm)</option>
+                        <option value="mm">Milímetro (mm)</option>
+                    </select>
+                </label>
+
+                <label for="paraComprimento">PARA:
+                    <select name="paraComprimento" id="paraComprimento">
+                        <option value="" disabled selected></option>
+                        <option value="km">Quilômetro (km)</option>
+                        <option value="m">Metro (m)</option>
+                        <option value="dm">Decímetro (dm)</option>
+                        <option value="cm">Centímetro (cm)</option>
+                        <option value="mm">Milímetro (mm)</option>
+                    </select>
+                </label>
+
+                <button class="comprimentoBtn" id="comprimentoBtn">CONVERTER</button>
+                <div class="resultadoComp" id="resultadoComp"></div>
+            </div>
+        </div>
+    </div>
+
+
+<script src="./script.js"></script>
+
+</body>
+</html>

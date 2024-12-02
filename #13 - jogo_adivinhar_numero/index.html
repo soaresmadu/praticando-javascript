@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/96607bd733.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pragati+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <title>Adivinha o número</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="layout-jogo">
+            <h1>ADIVINHE O NÚMERO</h1>
+
+            <div class="popUpVenceu" id="popUpVenceu">
+                <h1>Parabéns! Você venceu!</h1>
+                <div id="mensagemFinal1"></div>
+                <button id="fecharPopUp1">FECHAR</button>
+            </div>
+
+            <div class="popUpPerdeu" id="popUpPerdeu">
+                <h1>Que pena! Você não acertou!</h1>
+                <div id="mensagemFinal2"></div>
+                <button id="fecharPopUp2">FECHAR</button>
+            </div>
+
+            <button class="iniciarBtn" id="iniciarBtn">INICIAR JOGO</button>
+
+            <div class="jogo" id="containerJogo">
+            <input type="text" id="dicas" placeholder="Estou pensando em um número de 0 a 100" readonly>
+            <input type="number" id="palpiteInput" placeholder="Escreva um número" min="1" max="100">
+            <button id="verificarBtn">VERIFICAR</button>
+            <span id="status">Número de tentativas: 0</span>
+            </div>
+
+        </div>
+
+        <div class="menu">
+        <button class="comoJogarBtn" id="comoJogarBtn">COMO JOGAR</button>
+        </div>
+
+        <div class="comoJogar" id="comoJogarPopup">
+            <h1>COMO JOGAR: </h1>
+            <p>
+                Clique no botão Iniciar Jogo para começar.
+                Digite um número no campo de palpite e clique em Verificar.
+                O jogo informará se você acertou ou o número de tentativas que você já fez.
+            </p>
+            <h2>Dicas Durante o Jogo:</h2>
+            <p>
+                Você terá um limite de 10 tentativas para acertar o número.
+                Use sua lógica e estratégia para reduzir as possibilidades a cada tentativa.
+            </p>
+            <h2>Condições de Vitória e Derrota:</h2>
+            <p>
+                Vitória: Se você acertar o número dentro das 10 tentativas.
+                Derrota: Se ultrapassar 10 tentativas sem acertar o número.
+            </p>
+            <button id="fecharPopUp3">FECHAR</button>
+        </div>
+
+    </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
