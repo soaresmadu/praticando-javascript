@@ -14,7 +14,7 @@ const question1 = [
 ]
 
 const question2 = [
-    "Qual casa Harry pediu para que o chapéu seletor não o colocar?",
+    "Qual casa Harry pediu para o chapéu seletor não o colocar?",
     "Corvinal",
     "Sonserina",
     "Lufa-Lufa"
