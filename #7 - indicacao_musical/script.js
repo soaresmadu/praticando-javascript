@@ -22,6 +22,7 @@ const musicPop = [
     "AGAIN - Noah Cyrus, XXXTENTACION",
     "THAT'S SO TRUE - Gracie Abrams",
     "ONE OF THE GIRLS - The Weeknd, JENNIE, Lily-Rose Depp",
+    "LOOK WHAT YOU MADE ME DO - Taylor Swift",
     "BIRDS OF A FEATHER - Billie Eilish"
 ];
 
